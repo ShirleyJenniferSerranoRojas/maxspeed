@@ -1,17 +1,12 @@
 ---
-title: "Title Goes Here"
+title: "A general scaling law reveals why the largest animals are not the fastest"
 author:
-  - Myfirstname Mylastname:
-      email: fl@oneplace.edu
-      institute: [UofO]
-      correspondence: true
-  - Yourfirstname Yourlastname:
-      email: fl@another.edu
-      institute: [UofA]
+  - Shirley Jennifer Serrano Rojas:
+      email: serranoj@stanford.edu
+      institute: Stanford University
       correspondence: false
-institute:
-  - UofO: University of One Place
-  - UofA: University of Another Place
+
+
 date: "`r format(Sys.time(), '%d %B, %Y')`"
 output: 
     bookdown::word_document2:
@@ -24,11 +19,11 @@ output:
 bibliography: references.bib
 csl: "../templates/nature.csl" # Insert path for the bib-style
 abstract: |
-  Text of abstract
+  Speed is the fundamental constraint on animal movement, yet there is no general consensus on the determinants of maximum speed itself. Here, we provide a general scaling model of maximum speed with body mass, which holds across locomotion modes, ecosystem types and taxonomic groups. In contrast to traditional power-law scaling, we predict a hump-shaped relationship resulting from a finite acceleration time for animals, which explains why the largest animals are not the fastest. This model is strongly supported by extensive empirical data (474 species, with body masses ranging from 30 μg to 100 tonnes) from terrestrial as well as aquatic ecosystems. Our approach unravels a fundamental constraint on the upper limit of animal movement, thus enabling a better understanding of realized movement patterns in nature and their multifold ecological consequences.
 keywords: |
-  keyword 1; keyword 2; keyword 3
+  Speed ; animal movement; body mass
 highlights: |
-  These are the highlights. 
+   This approach may act as a simple and powerful tool for predicting the natural boundaries of animal movement and help in gaining a more unified understanding of the currently assessed movement data across taxa and ecosystems
 ---
 
 <!-- This is the format for text comments that will be ignored during renderings. Do not put R code in these comments because it will not be ignored. -->
@@ -59,7 +54,7 @@ knitr::opts_chunk$set(
 
 This is a replication of figure 2A from [@hirt2017]
 
-(Fig. \@ref(fig:fig2a)
+(Fig. \@ref(fig:fig2a))
 
 # Background
 
@@ -135,25 +130,6 @@ ggplot(fly_dat, aes(x = mass_kg, y = max_spd_kmh)) +
   theme_classic() +
   theme(aspect.ratio = 1)
 ```
-
-<!-- Here's some example analysis code: -->
-
-```{r get-data, eval = FALSE}
-# Note the path that we need to use to access our data files when rendering this document
-my_data <- read.csv(here::here('analysis/data/raw_data/my_csv_file.csv'))
-```
-
-```{r demo-plot, fig.cap="A plot of random numbers"}
-plot(rnorm(10))
-```
-
-Figure \@ref(fig:demo-plot) shows how we can have a caption and cross-reference for a plot
-
-```{r demo-inline-code}
-x <- round(pi, 2)
-```
-
-Here is an example of inline code `r x` in the middle of a sentence.
 
 # Discussion
 
