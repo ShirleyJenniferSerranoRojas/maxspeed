@@ -1,9 +1,9 @@
 Package: maxspeed
-Title: What the Package Does (One Line, Title Case)
+Title: A general scaling law reveals why the largest animals are not the fastest - replicate
 Version: 0.0.0.9000
 Authors@R:
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"))
-Description: What the package does (one paragraph).
+    person("Shirley", "Serrano Rojas", , "serranoj@stanford.edu", role = c("aut", "cre"))
+Description: What the package does (This is a general scaling model of maximum speed with body mass, which holds across locomotion modes, ecosystem types and taxonomic groups).
 License: MIT + file LICENSE
 ByteCompile: true
 Encoding: UTF-8
